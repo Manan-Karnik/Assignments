@@ -29,12 +29,3 @@ print("H.", gv.istitle())
 
 # I.
 print("I.", gv.replace("a", "o"))
-
-
-
-
-
-
-
-
-
