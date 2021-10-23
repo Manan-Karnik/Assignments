@@ -1,4 +1,4 @@
-# get input from user
+# Get input from user
 ip_str = input("Enter string: ")
 
 # sort the text
