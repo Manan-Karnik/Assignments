@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int size, i, j, k, n1, n2, a[100];
+int size, i, j, k, a[100];
 
 void mergeSort(int a[], int low, int high) {
     if (low < high) {
@@ -12,8 +12,8 @@ void mergeSort(int a[], int low, int high) {
         mergeSort(a, mid + 1, high);
 
         // Create L ← A[low..mid] and M ← A[mid+1..high]
-        n1 = mid - low + 1;
-        n2 = high - mid;
+        int n1 = mid - low + 1;
+        int n2 = high - mid;
 
         int L[n1], M[n2];
 
