@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int size, i, j, k, n1, n2, high, a[100];
+int size, i, j, k, n1, n2, a[100];
 
 void mergeSort(int a[], int low, int high) {
     if (low < high) {
