@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 int i, j, n;
-char ch;
 
 int  main()
 {
-	n = 5, ch = '*';
+	n = 5;
 
     // Print first half (Triangle)
 	for(i = 1; i <= n; i++)
@@ -15,13 +14,11 @@ int  main()
     	{
         	printf(" ");
     	}
-
         // Print '*'
     	for(j = 1; j <= (i * 2) - 1; j++)
     	{
-        	printf("%c", ch);
+        	printf("*");
     	}
-
     	printf("\n");
 	}
 
@@ -33,14 +30,13 @@ int  main()
     	{
         	printf(" ");
     	}
-
         // Print '*'
     	for(j = 1; j <= (i * 2) - 1; j++)
     	{
-        	printf("%c", ch);
+        	printf("*");
     	}
-
     	printf("\n");
 	}
 
+	return 0;
 }

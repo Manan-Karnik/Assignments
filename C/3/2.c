@@ -16,7 +16,7 @@ int main()
     }
 
     // Print result
-    printf("\nFactorial of the number is %d", fact);
+    printf("\nFactorial of the number is %d\n", fact);
 
     return 0;
 }

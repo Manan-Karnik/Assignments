@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 
 int i, num, factors = 0;
 
@@ -23,9 +22,13 @@ int main()
     {
         printf("\n%d is composite\n", num);
     }
-    else
+    else if (factors == 2)
     {
         printf("\n%d is prime\n", num);
+    }
+    else
+    {
+        printf("\n%d is neither prime nor composite\n", num);
     }
 
     return 0;

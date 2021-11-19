@@ -18,7 +18,7 @@ int main()
     }
 
     // Print result
-    printf("Reverse of %d is %d", num, rev);
+    printf("Reverse of %d is %d\n", num, rev);
 
     return 0;
 }

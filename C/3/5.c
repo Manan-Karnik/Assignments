@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-int i, j, num, fact, sum;
+int i, j, n, fact, sum;
 
 int main()
 {
-    num = 5, sum = 0;
+    n = 5, sum = 0;
 
     // Calculate sum of factorials
-    for (i = 1; i <= num; i++)
+    for (i = 1; i <= n; i++)
     {
         fact = 1;
         for (j = 1; j <= i; j++)
@@ -18,7 +18,7 @@ int main()
     }
 
     // Print result
-    printf("Sum of factorial of the first %d numbers is %d\n", num, sum);
+    printf("Sum of factorial of the first %d numbers is %d\n", n, sum);
 
     return 0;
 }
