@@ -5,7 +5,7 @@
 int len, *a, *bubble_sorted_a, *selection_sorted_a;
 
 // Declare function bubbleSort of return type int *
-int *bubbleSort(int *a[])
+int *bubbleSort(int a_[])
 {
     // Declare variables
     int step, swapped, i, tmp;
@@ -18,11 +18,11 @@ int *bubbleSort(int *a[])
         for (i = 0; i < (len - step - 1); i++)
         {
             // Swap elements if current element > next element
-            if (a[i] > a[i + 1])
+            if (a_[i] > a_[i + 1])
             {
-                tmp = a[i];
-                a[i] = a[i + 1];
-                a[i + 1] = tmp;
+                tmp = a_[i];
+                a_[i] = a_[i + 1];
+                a_[i + 1] = tmp;
                 swapped = 1;
             }
         }
@@ -33,11 +33,11 @@ int *bubbleSort(int *a[])
         }
     }
 
-    return a;
+    return a_;
 }
 
 // Declare function selectionSort of return type int *
-int *selectionSort(int *a[])
+int *selectionSort(int a_[])
 {
     // Declare variables
     int step, min, i, tmp;
@@ -50,18 +50,18 @@ int *selectionSort(int *a[])
         for (i = step + 1; i < len; i++)
         {
             // If any element is less than min, set that as new min
-            if (a[i] < a[min])
+            if (a_[i] < a_[min])
             {
                 min = i;
             }
         }
         // Swap min with step
-        tmp = a[step];
-        a[step] = a[min];
-        a[min] = tmp;
+        tmp = a_[step];
+        a_[step] = a_[min];
+        a_[min] = tmp;
     }
 
-    return a;
+    return a_;
 }
 
 // Main function
