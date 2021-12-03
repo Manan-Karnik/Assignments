@@ -1,0 +1,22 @@
+file = open("data.txt", "w")
+
+file.write('''The computer is an electronic device that connects us to people across the world.
+The word 'computer' originates from a Latin word 'Computare' meaning calculate.
+It was invented for solving programs and for calculations. With the development of technology, computers have evolved to solve other programs.
+A computer consists of a monitor, mouse, CPU, and keyboard.
+A computer takes in information as input, processes the data, and gives new information as the output.
+A computer is used for various purposes. It is used for making Software, documents, invoices, lists, etc.
+A computer is also used for playing games, listening to music, accessing the internet, watching movies, and solving programs and calculations.
+There are three basic types of computers - Hybrid computers, Analog computers, and Digital computers.
+Computers are used in various fields like medical sectors, educational areas, research, etc.
+Computers can perform a powerful function and hence have reduced our efforts and made our life easy.
+''')
+
+file.close()
+
+file = open("data.txt", "r")
+
+for line in file:
+    print(line)
+
+file.close()
