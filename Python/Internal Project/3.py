@@ -61,7 +61,7 @@ while(True):
         break
 
     else:
-        choice = int(input("\nInvalid choice, please try again: "))
+        print("Invalid choice, please try again")
     print("\n")
 
     
