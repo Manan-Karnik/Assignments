@@ -15,7 +15,7 @@ def isArmstrong(n):
     for digit in str(n):
         add += int(digit) ** len_n
 
-    if add == num:
+    if add == n:
         return True
     else:
         return False
